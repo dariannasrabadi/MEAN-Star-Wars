@@ -10,23 +10,21 @@
 
 - [x] Create base set-up files from client to server side. (index.html, server.js, client.js, styles.css, etc)
 
-- [ ] place all vendors into the vendors folder.
+- [x] place all vendors into the vendors folder.
 
 
 ## Client Side 
 
-- [ ] Link all the necessary files to the index.html.
+- [x] Link all the necessary files to the index.html.
 
-- [ ] create layout for index html that includes an ng-view are for the search/favorites view. 
+- [x] create layout for index html that includes an ng-view are for the search/favorites view. 
 
-- [ ] Nav bar to swap between the homepage view and the search/favorites view. 
+- [x] Nav bar to swap between the homepage view and the search/favorites view. 
 
 - [ ] Try Angular Material... TRY.
 
 
 ### Search View
-
-- [ ] Nav Bar 
 
 - [ ] Dropdown menu and an input bar for keyword functionality.
 
@@ -40,8 +38,6 @@
 
 
 ### Favorites View
-
-- [ ] Nav Bar 
 
 - [ ] Display area for all the favorited items
 
