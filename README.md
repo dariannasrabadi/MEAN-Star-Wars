@@ -6,9 +6,9 @@
 
 - [x] Create readme file.
 
-- [ ] npm install angular angular-animate angular-aria angular-material angular-messages angular-route express body-parser mongoose --save
+- [x] npm install angular angular-animate angular-aria angular-material angular-messages angular-route express body-parser mongoose --save
 
-- [ ] Create base set-up files from client to server side. (index.html, server.js, client.js, styles.css, etc)
+- [x] Create base set-up files from client to server side. (index.html, server.js, client.js, styles.css, etc)
 
 - [ ] place all vendors into the vendors folder.
 
@@ -50,6 +50,8 @@
 - [ ] Create GET/DELETE feature to display the results of the favorited items and delete the favorite images removed of the user. 
 
 ## Server Side
+
+- [x] Require all files needed in each area (example, express, body-parser, route, etc).
 
 - [ ] create a schema in the module for data to be stored. 
 
