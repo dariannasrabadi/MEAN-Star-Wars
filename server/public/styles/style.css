@@ -1,9 +1,27 @@
 body {
-    background: url("resources/stars-bg.jpg");
     color: yellow;
     font-family: "Droid Sans", arial, verdana, sans-serif;
+    height: 100%;
+    width: 100%;
 }
 
 #title {
     text-align: center
+}
+
+.searchResult {
+    width: 300px;
+    margin: 5px auto;
+    position: relative;
+    border: solid yellow 1.5px;
+}
+
+.searchResult p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+body.md-default-theme, body, html.md-default-theme, html {
+    background: url("resources/stars-bg.jpg");
+    background-color: none;
 }

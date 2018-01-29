@@ -26,15 +26,15 @@
 
 ### Search View
 
-- [ ] Dropdown menu and an input bar for keyword functionality.
+- [x] Dropdown menu and an input bar for keyword functionality.
 
-- [ ] Angular functionality in general.
+- [x] Angular functionality in general.
 
-- [ ] Display area for the results of the search. 
+- [x] Display area for the results of the search. 
 
-- [ ] Button/Star/Image user can click to favorite the item.
+- [x] Button/Star/Image user can click to favorite the item.
 
-- [ ] Create GET/POST/DELETE feature to display the results of the search and post the favorite images of the user. 
+- [x] Create GET/POST feature to display the results of the search and post the favorite images of the user. 
 
 
 ### Favorites View
@@ -49,6 +49,6 @@
 
 - [x] Require all files needed in each area (example, express, body-parser, route, etc).
 
-- [ ] create a schema in the module for data to be stored. 
+- [x] create a schema in the module for data to be stored. 
 
 - [ ] In the router create proper GET/POST/PUT/DELETE functionalities depending on what request came from the client.
