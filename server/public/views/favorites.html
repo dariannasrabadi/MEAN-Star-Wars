@@ -1,18 +1,9 @@
 <h1 id="title">Star Wars</h1>
 <h3>
-        Select Aspect To Search 
-    </h3>
-    
-    <select ng-model="vm.selected">
-        <option ng-repeat="(first, second) in vm.resourceArray.list">{{first}}</option>
-    </select>
-    
-    <input type="text" placeholder="(Luke, Tatooine, etc)" ng-model="vm.searchInfo">
-    
-    <button ng-click="vm.resourceSelected(vm.selected, vm.searchInfo)">Search</button>
-    
-    <div ng-repeat="data in vm.starWarsResource.list.results">
-        <div class="searchResult" ng-if="vm.hideBorder">
+    Favorite Things 
+</h3>
+    <div ng-repeat="data in vm.favorites.list">
+        <div class="searchResult">
             <p ng-if="data.title">{{data.title}}</p>
             <p ng-if="data.name">{{data.name}}</p>
             <p ng-if="data.birth_year"> Birth Year: {{data.birth_year}}</p>
@@ -39,6 +30,6 @@
             <p ng-if="data.designation">Designation: {{data.designation}}</p>
             <p ng-if="data.language">Language: {{data.language}}</p>
             <p ng-if="data.starship_class">Class: {{data.starship_class}}</p>
-            <button ng-click="vm.addFavorite(data.url)">Delete</button>
+            <button ng-click="vm.deleteFavorite(data._id)">Delete</button>
         </div>
     </div>
