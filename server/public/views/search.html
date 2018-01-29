@@ -1,0 +1,44 @@
+<h1 id="title">Star Wars</h1>
+<h3>
+    Select Aspect To Search 
+</h3>
+
+<select ng-model="vm.selected">
+    <option ng-repeat="(first, second) in vm.resourceArray.list">{{first}}</option>
+</select>
+
+<input type="text" placeholder="(Luke, Tatooine, etc)" ng-model="vm.searchInfo">
+
+<button ng-click="vm.resourceSelected(vm.selected, vm.searchInfo)">Search</button>
+
+<div ng-repeat="data in vm.starWarsResource.list.results">
+    <div class="searchResult" ng-if="vm.hideBorder">
+        <p ng-if="data.title">{{data.title}}</p>
+        <p ng-if="data.name">{{data.name}}</p>
+        <p ng-if="data.birth_year"> Birth Year: {{data.birth_year}}</p>
+        <p ng-if="data.gender">Gender: {{data.gender}}</p>
+        <p ng-if="data.height">Height: {{data.height | number}}</p>
+        <p ng-if="data.mass"> Mass: {{data.mass | number}}</p>
+        <p ng-if="data.hair_color">Hair: {{data.hair_color}}</p>
+        <p ng-if="data.eye_color">Eyes: {{data.eye_color}}</p>
+        <p ng-if="data.skin_color">Skin: {{data.skin_color}}</p>
+        <p ng-if="data.climate">Climate: {{data.climate}}</p>
+        <p ng-if="data.population">Population: {{data.population | number}}</p>
+        <p ng-if="data.diameter">Diameter: {{data.diameter | number}}</p>
+        <p ng-if="data.gravity">Gravity: {{data.gravity}}</p>
+        <p ng-if="data.director">Directed By: {{data.director}}</p>
+        <p ng-if="data.release_date">Released: {{data.release_date}}</p>
+        <p ng-if="data.opening_crawl">Opening Crawl: {{data.opening_crawl}}</p>
+        <p ng-if="data.manufacturer">Manufacturer: {{data.manufacturer}}</p>
+        <p ng-if="data.passengers">Passengers: {{data.passengers | number}}</p>
+        <p ng-if="data.cargo_capacity">Cargo Capacity: {{data.cargo_capacity | number}}</p>
+        <p ng-if="data.vehicle_class">Vehicle Class: {{data.vehicle_class}}</p>
+        <p ng-if="data.cost_in_credits">Cost: {{data.cost_in_credits | number}}</p>
+        <p ng-if="data.classification">Classification: {{data.classification}}</p>
+        <p ng-if="data.average_lifespan">Average Lifespan: {{data.average_lifespan}}</p>
+        <p ng-if="data.designation">Designation: {{data.designation}}</p>
+        <p ng-if="data.language">Language: {{data.language}}</p>
+        <p ng-if="data.starship_class">Class: {{data.starship_class}}</p>
+        <button ng-click="vm.addFavorite(data.url)">Favorite</button>
+    </div>
+</div>
