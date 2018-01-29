@@ -50,3 +50,7 @@ md-icon.md-default-theme, md-icon {
 .favoriteButton {
     text-align: center;
 }
+
+#deleteButton {
+    color: red;
+}

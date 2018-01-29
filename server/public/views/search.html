@@ -9,7 +9,7 @@
 
 <input type="text" placeholder="(Luke, Tatooine, etc)" ng-model="vm.searchInfo">
 
-<button ng-click="vm.resourceSelected(vm.selected, vm.searchInfo)">Search</button>
+<md-button ng-click="vm.resourceSelected(vm.selected, vm.searchInfo)">Search</md-button>
 
 <div ng-repeat="data in vm.starWarsResource.list.results">
     <div class="searchResult" ng-if="vm.hideBorder">
@@ -39,6 +39,6 @@
         <p ng-if="data.designation">Designation: {{data.designation}}</p>
         <p ng-if="data.language">Language: {{data.language}}</p>
         <p ng-if="data.starship_class">Class: {{data.starship_class}}</p>
-        <button ng-click="vm.addFavorite(data.url)" class="favoriteButton">Favorite This You Will? <md-icon md-svg-src="../styles/resources/yoda.svg"></md-icon></button>
+        <md-button ng-click="vm.addFavorite(data.url)" class="favoriteButton">Favorite This You Will? <md-icon md-svg-src="../styles/resources/yoda.svg"></md-icon></md-button>
     </div>
 </div>

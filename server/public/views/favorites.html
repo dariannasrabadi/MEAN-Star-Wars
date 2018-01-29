@@ -30,6 +30,6 @@
             <p ng-if="data.designation">Designation: {{data.designation}}</p>
             <p ng-if="data.language">Language: {{data.language}}</p>
             <p ng-if="data.starship_class">Class: {{data.starship_class}}</p>
-            <button ng-click="vm.deleteFavorite(data._id)">Delete</button>
+            <md-button id="deleteButton" ng-click="vm.deleteFavorite(data._id)">Delete</md-button>
         </div>
     </div>
