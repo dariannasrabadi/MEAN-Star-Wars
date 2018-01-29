@@ -39,11 +39,11 @@
 
 ### Favorites View
 
-- [ ] Display area for all the favorited items
+- [x] Display area for all the favorited items
 
-- [ ] Same Button/Star/Image that the user can click again to remove favorite status.
+- [x] Same Button/Star/Image that the user can click again to remove favorite status.
 
-- [ ] Create GET/DELETE feature to display the results of the favorited items and delete the favorite images removed of the user. 
+- [x] Create GET/DELETE feature to display the results of the favorited items and delete the favorite images removed of the user. 
 
 ## Server Side
 
@@ -51,4 +51,4 @@
 
 - [x] create a schema in the module for data to be stored. 
 
-- [ ] In the router create proper GET/POST/PUT/DELETE functionalities depending on what request came from the client.
+- [x] In the router create proper GET/POST/PUT/DELETE functionalities depending on what request came from the client.
