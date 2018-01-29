@@ -9,11 +9,16 @@ let Starwars = mongoose.model('Starwars', starwarsSchema);
 /* GET REQUESTS */
 
 
-
-
-
-
-
+router.get('/', (req, res) => {
+    Starwars.find({}, (error, urls) => {
+        if(error) {
+            console.log('error on find:', error);
+            res.sendStatus(500);
+        } else {
+            res.send(urls);
+        }
+    })
+});
 
 
 /* POST REQUESTS */
@@ -50,7 +55,19 @@ router.post('/', (req, res) => {
 
 /* DELETE REQUESTS */
 
-
+router.delete('/:id', (req, res) => {
+    let id = req.params.id;
+    Starwars.findByIdAndRemove(
+        {'_id': id},
+        (error, removed) => {
+            if(error) {
+                console.log('error on delete', error);
+                res.sendStatus(500);
+            } else {
+                res.sendStatus(201);
+            }
+        });
+});
 
 
 
