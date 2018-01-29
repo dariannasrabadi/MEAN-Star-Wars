@@ -1,0 +1,9 @@
+body {
+    background: url("resources/stars-bg.jpg");
+    color: yellow;
+    font-family: "Droid Sans", arial, verdana, sans-serif;
+}
+
+#title {
+    text-align: center
+}

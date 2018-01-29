@@ -8,10 +8,6 @@ console.log('Service loaded');
 
 
 
-
-
-
-
 /* POST REQUESTS */
 
 
