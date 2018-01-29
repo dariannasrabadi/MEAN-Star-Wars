@@ -5,19 +5,17 @@ console.log('Service loaded');
     self.starWarsResource = {list: []};
 /* GET REQUESTS */
 
-    self.resourceSelected = function (resource) {
+    self.resourceSelected = function (resource, info) {
         $http({
             method: 'GET',
-            url: `https://swapi.co/api/${resource}/2/`
+            url: `https://swapi.co/api/${resource}/?search=${info}`
         })
         .then(function(response) {
             self.starWarsResource.list = response.data
-            // $http.get(self.starWarsPerson.films[0]).then(function (response) { //This is a shortcut method of the above. 
-            //     console.log(response);
-            //     self.starWarsMovie = response
-            // })
-            
         })        
+        .catch(function (response) {
+            console.log('error on search get', response);
+        });
     }
 
 	self.getResources = function (){
@@ -26,25 +24,23 @@ console.log('Service loaded');
 			url: 'https://swapi.co/api/'
 			}).then(function(response) {
                 self.resourceArray.list = response.data;
-			})
+            })
+            .catch(function (response) {
+                console.log('error on initial get', response);
+            });
     };
     
     self.getResources()
 /* POST REQUESTS */
 
-
-
-
-
-
-
-
-
-/* PUT REQUESTS */
-
-
-
-
+self.addFavorite = function(data) {
+    $http.post('/starwars', data)
+        .then(function(response) {
+    })
+        .catch(function (response) {
+        console.log('error on post', response);
+    });
+}
 
 
 
@@ -53,13 +49,6 @@ console.log('Service loaded');
 /* DELETE REQUESTS */
 
 
-
-
-
-
-
-
-/* FUNCTIONS */
 
 
 
