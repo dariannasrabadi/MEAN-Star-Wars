@@ -18,7 +18,19 @@ let Starwars = mongoose.model('Starwars', starwarsSchema);
 
 /* POST REQUESTS */
 
+router.post('/', (req, res) => {
+    let addFavorite = new Starwars(req.body);
 
+    addFavorite.save((error, saved) => {
+        if (error) {
+            console.log('error on save: ', error);
+            res.sendStatus(500);
+        } else {
+            res.sendStatus(201);
+        }
+    });
+
+}); // end post route
 
 
 

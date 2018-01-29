@@ -33,9 +33,13 @@ console.log('Service loaded');
     self.getResources()
 /* POST REQUESTS */
 
-self.addFavorite = function(data) {
+self.addFavorite = function(url) {
+    let data = {
+        url: url
+    }
     $http.post('/starwars', data)
         .then(function(response) {
+            alert('Added to favorites!')
     })
         .catch(function (response) {
         console.log('error on post', response);
