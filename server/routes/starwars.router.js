@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const mongoose = require('mongoose');
 const starwarsSchema = require('../modules/starwars.schema');
 
 let Starwars = mongoose.model('Starwars', starwarsSchema);

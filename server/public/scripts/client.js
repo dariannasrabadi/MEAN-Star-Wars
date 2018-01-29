@@ -1,4 +1,4 @@
-let app = angular.module('myApp', ['ngRoute', 'ngMaterial']);
+let app = angular.module('app', ['ngRoute', 'ngMaterial']);
 
 app.config(function($routeProvider) {
     console.log('config loaded');
